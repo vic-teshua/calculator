@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+.calculator {
+  border: 2px solid black;
+  max-width: 450px;
+  margin: 10vh auto;
+  font-family: 'Rubik', sans-serif;
+
+  padding: 20px;
+  box-shadow: 3px 3px 4px black;
+  background-color: #353332;
+}
+
+.screen {
+  padding: 15px;
+  text-align: right;
+
+  font-size: 3.5rem;
+  background-color: #b8c6a3;
+  border-bottom: 5px solid #727271;
+  border-right: 5px solid #727271;
+  border-top: 5px solid #999996;
+  border-left: 5px solid #999996;
+
+  box-shadow: inset -3px -3px 15px 0 rgb(97, 105, 85);
+}
+
+.buttons {
+  padding: 10px;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+  background-color: #353332;
+}
+
+.button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.5rem;
+  padding: 10px;
+  border-top: 1px solid rgb(155, 152, 152);
+  border-left: 1px solid rgb(155, 152, 152);
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px black;
+  background: linear-gradient(360deg, #1c1a19, #5b5954);
+  color: #f3e9d1;
+  text-shadow: 3px 3px 5px black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:last-child {
+  width: 320%;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  color: rgb(194, 194, 186);
+  background: linear-gradient(360deg, #443f3d, #c0bdb5);
+}
